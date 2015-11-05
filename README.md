@@ -14,3 +14,6 @@ und referenz zu Zombies
 scaffold wurde migrated
 
 **welche schritte nach klonen**
+evtl fehlende bundle installieren
+rake:db migrate
+server starten
