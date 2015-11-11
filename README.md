@@ -1,6 +1,6 @@
 ## Contributors
-Sebastian Huber
-Ryan Wels
+Sebastian Huber,
+Adam Czogallik
 
 ## Answers
 **argumente für scaffold:**
