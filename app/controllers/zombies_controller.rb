@@ -69,6 +69,6 @@ class ZombiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def zombie_params
-      params.require(:zombie).permit(:name, :graveyard, :day_of_death, :no_of_arms, :description)
+      params.require(:zombie).permit(:name, :graveyard, :day_of_death, :no_of_arms, :description, :password, :password_confirmation)
     end
 end

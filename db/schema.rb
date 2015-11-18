@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151111145920) do
+ActiveRecord::Schema.define(version: 20151118151107) do
 
   create_table "tweets", force: :cascade do |t|
     t.string   "status"
@@ -29,8 +29,9 @@ ActiveRecord::Schema.define(version: 20151111145920) do
     t.date     "day_of_death"
     t.integer  "no_of_arms"
     t.text     "description"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
 
 end

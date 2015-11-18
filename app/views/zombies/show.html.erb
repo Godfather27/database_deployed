@@ -25,5 +25,10 @@
   <%= @zombie.description %>
 </p>
 
+<p>
+  <strong>Password:</strong>
+  <%= @zombie.password %>
+</p>
+
 <%= link_to 'Edit', edit_zombie_path(@zombie) %> |
 <%= link_to 'Back', zombies_path %>
