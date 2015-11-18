@@ -16,7 +16,7 @@
     <% @tweets.each do |tweet| %>
       <tr>
         <td><%= tweet.status %></td>
-        <td><%= link_to tweet.zombie, tweet.zombie %></td>
+        <td><%= link_to tweet.zombie.name, tweet.zombie %></td>
         <td><%= tweet.date %></td>
         <td><%= link_to 'Show', tweet %></td>
         <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
