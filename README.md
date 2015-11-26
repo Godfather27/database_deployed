@@ -1,3 +1,3 @@
 ## Contributors
 Sebastian Huber,
-Adam Czogallik
+Alexander Gabriel
