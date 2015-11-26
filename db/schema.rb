@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151118151107) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "tweets", force: :cascade do |t|
     t.string   "status"
     t.integer  "zombie_id"
@@ -21,7 +24,7 @@ ActiveRecord::Schema.define(version: 20151118151107) do
     t.date     "date"
   end
 
-  add_index "tweets", ["zombie_id"], name: "index_tweets_on_zombie_id"
+  add_index "tweets", ["zombie_id"], name: "index_tweets_on_zombie_id", using: :btree
 
   create_table "zombies", force: :cascade do |t|
     t.string   "name"
@@ -34,4 +37,5 @@ ActiveRecord::Schema.define(version: 20151118151107) do
     t.string   "password_digest"
   end
 
+  add_foreign_key "tweets", "zombies"
 end
